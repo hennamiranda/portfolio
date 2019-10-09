@@ -173,7 +173,7 @@ section {
 }
 
 .project-image img{
-    width: 80%;
+    height: 500px;
 }
 
 .project, .method{
@@ -263,9 +263,9 @@ footer p:nth-child(2) {
     #button-close {
         display: none;
     }
-    #menu {
-        padding: 0 60px 0 0;
 
+    #menu {
+        padding: 0 45px 0 0;
     }
     #menu li{
         display: inline-block;
@@ -328,10 +328,6 @@ footer p:nth-child(2) {
         text-align: right;
     }
 
-    .project-image img{
-        width: 30vw;
-    }
-
     .about-me {
         display: flex;
         justify-content: space-between;
@@ -363,19 +359,18 @@ footer p:nth-child(2) {
     h2 {
         font-size: 30px;
     }
-
-    .wrap {
-        padding-left: 140px;
-        padding-right: 140px;
-    }
     
     header {
-        padding-left: 70px;
-        /* padding-right: 140px; */
+        padding-left: 40px;
+    }
+
+    #menu {
+        padding: 0 25px 0 0;
+
     }
 
     #summary {
-        height: 600px;
+        height: 450px;
     }
 
     article {
@@ -390,8 +385,12 @@ footer p:nth-child(2) {
         flex-basis: 40%;
     }
 
-    .project-image img{
-        width: 25vw;
+    .project-image {
+        text-align: left;
+    }
+    
+    .project-summary:nth-child(odd) .project-image{
+        text-align: right;
     }
 
     .my-methods {
@@ -417,7 +416,6 @@ footer p:nth-child(2) {
     }
 
     .about-image img {
-        width: 40vw;
         margin-top: 20px;
     }
 
@@ -429,7 +427,7 @@ footer p:nth-child(2) {
     }
 
     footer {
-        padding: 0 70px;
+        padding: 0 40px;
         height: 150px;
     }
 
@@ -446,16 +444,45 @@ footer p:nth-child(2) {
 
 
 
+@media only screen and (min-width: 1280px) {
+
+    .wrap {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    header {
+        padding-left: 60px;
+    }
+
+    #menu {
+        padding: 0 45px 0 0;
+
+    }
+
+    #summary {
+        height: 550px;
+    }
+
+    .about-image img {
+        width: 30vw;
+    }
+
+
+    footer {
+        padding: 0 60px;
+    }
+
+}
+
+
+
 
 @media only screen and (min-width: 1440px) {
 
     .wrap {
-        padding-left: 240px;
-        padding-right: 240px;
-    }
-
-    header {
-        padding-left: 100px;
+        padding-left: 200px;
+        padding-right: 200px;
     }
 
     h1 {
@@ -478,17 +505,6 @@ footer p:nth-child(2) {
         flex-basis: 40%;
     }
 
-    .project-image {
-        text-align: left;
-    }
-    
-    .project-image img {
-        width: 13vw;
-    }
-    
-    .project-summary:nth-child(odd) .project-image{
-        text-align: right;
-    }
 
     .method {
         padding-right: 50px;
