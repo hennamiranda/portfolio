@@ -1,3 +1,4 @@
+/* general CSS */
 body {
     font: 16px 'Rubik', sans-serif;
     color: #303030;
@@ -5,6 +6,87 @@ body {
     line-height: 30px;
 }
 
+a,
+a:visited {
+    text-decoration: none;
+    color: #CE6464;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.light {
+    font-weight: 300;
+    margin: 0;
+}
+
+.quote {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote span {
+    font-style: normal;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.button {
+    display: flex;
+    margin: 30px 0;
+}
+
+.button a,
+.button a:visited {
+    color: #303030;
+    padding: 10px;
+    border: 1px solid #303030;
+    border-radius: 2px;
+}
+
+.button a:hover {
+    text-decoration: none;
+    color: white !important;
+    border: 1px solid #CE6464;
+    background: #CE6464;
+}
+
+/* layout */
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr minmax(320px, 1280px) 1fr;
+}
+
+.content {
+    grid-column-start: 2;
+    padding: 0 6%;
+}
+
+section {
+    margin: 80px 0;
+    overflow: hidden;
+}
+
+/* header */
 header,
 #summary,
 footer {
@@ -26,7 +108,14 @@ header {
     padding-right: 20px;
 }
 
+#logo a,
+#logo a:visited {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
 
+/* summary */
 #summary, footer {
     padding-top: 10px;
     padding-bottom: 20px;
@@ -39,59 +128,7 @@ header {
     height: 400px;
 }
 
-a,
-a:visited {
-    text-decoration: none;
-    color: #CE6464;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-h1 {
-    font-size: 30px;
-    line-height: 35px;
-}
-
-
-h2 {
-    font-size: 25px;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
-.button{
-    display: flex;
-    margin: 30px 0;
-}
-.button a,
-.button a:visited {
-    color: #303030;
-    padding: 10px;
-    border: 1px solid #303030;
-    border-radius: 2px;
-}
-
-.button a:hover {
-    text-decoration: none;
-    color: white !important;
-    border: 1px solid #CE6464;
-    background: #CE6464;
-}
-
-#logo a,
-#logo a:visited {
-    text-decoration: none;
-    color: white;
-    display: block;
-}
-
+/* nav bar */
 #background-fade {
     position: fixed;
     width: 100%;
@@ -111,6 +148,7 @@ nav {
     border-radius: 0 0 2px 2px;
     box-shadow: 0 4px 10px #3b3b3b;
 }
+
 #button-close {
     padding: 20px;
     color: #303030;
@@ -123,7 +161,6 @@ nav.close, #background-fade.hide {
 
 nav.open, #background-fade.show {
     display: block;
-
 }
 
 #menu {
@@ -148,59 +185,29 @@ nav.open, #background-fade.show {
     line-height: 20px;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr minmax(320px, 1280px) 1fr;
-}
-
-.content {
-    grid-column-start: 2;
-    padding: 0 6%;
-}
-
-section {
-    margin: 80px 0;
-    overflow: hidden;
-}
-
-
+/* content */
 .project-image {
     text-align: center;
 }
 
-.project-image img{
+.project-image img {
     height: 500px;
 }
 
-.project, .method{
+.project, .method {
     margin: 40px 0;
 }
+
 .about-me .about-image {
     text-align: center;
 }
 
-.about-image img {
+.about-me img {
     width: 300px;
     border-radius: 2px;
 }
 
-.light {
-    font-weight: 300;
-    margin: 0;
-}
-
-.quote {
-    font-weight: 300;
-    font-style: italic;
-}
-.quote span {
-    font-style: normal;
-}
-
-strong {
-    font-weight: 500;
-}
-
+/* footer */
 footer {
     text-align: center;
     padding-left: 20px;
@@ -214,18 +221,21 @@ footer a, footer a:visited {
 footer p:nth-child(1) {
     font-weight: 300;
 }
+
 footer p:nth-child(2) {
     font-weight: 400;
     margin-top: 30px;
 }
 
 @media only screen and (min-width: 760px) {
+    /* header */
     header {
         height: 80px;
         padding-left: 60px;
         padding-right: 60px;
     }
 
+    /* nav bar */
     #button-open, #button-close {
         display: none;
     }
@@ -242,16 +252,17 @@ footer p:nth-child(2) {
     #menu {
         padding: 0 45px 0 0;
     }
-    #menu li{
+
+    #menu li {
         display: inline-block;
         margin: 0 15px;
     }
 
-    #menu li a, #menu li a:visited{
+    #menu li a, #menu li a:visited {
         color: white;
     }
 
-    #menu li a:hover{
+    #menu li a:hover {
         text-decoration: underline;
         color: white;
     }
@@ -271,6 +282,7 @@ footer p:nth-child(2) {
         border: 1px solid #CE6464;
     }
 
+    /* content */
     .project-summary {
         display: flex;
         justify-content: space-between;
