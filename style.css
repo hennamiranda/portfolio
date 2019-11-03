@@ -86,6 +86,10 @@ section {
     overflow: hidden;
 }
 
+section:nth-child(2) {
+    margin: 160px 0;
+}
+
 /* header */
 header,
 #summary,
@@ -186,6 +190,10 @@ nav.open, #background-fade.show {
 }
 
 /* content */
+article {
+    margin: 60px 0;
+}
+
 .project-image {
     text-align: center;
 }
@@ -194,7 +202,7 @@ nav.open, #background-fade.show {
     height: 500px;
 }
 
-.project, .method {
+.methods div {
     margin: 40px 0;
 }
 
@@ -268,7 +276,7 @@ footer p:nth-child(2) {
     }
 
     #menu li:last-child {
-        margin: 0;
+        margin: 0 0 0 15px;
     }
 
     #menu li:last-child a,
@@ -293,6 +301,10 @@ footer p:nth-child(2) {
         flex-direction: row-reverse;
     }
 
+    .project-summary:last-child {
+        margin-bottom: 0;
+    }
+
     .project-summary h3 {
         margin-top: 0;
     }
@@ -315,6 +327,10 @@ footer p:nth-child(2) {
 
     .methods img {
         margin-bottom: 20px;
+    }
+
+    .methods div {
+        margin: 0;
     }
 
     .about-me {
