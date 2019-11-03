@@ -151,11 +151,16 @@ nav {
     background: white;
     border-radius: 0 0 2px 2px;
     box-shadow: 0 4px 10px #3b3b3b;
+    width: 100%;
 }
 
 #button-close {
     padding: 20px;
     color: #303030;
+}
+
+nav .button {
+    justify-content: center;
 }
 
 nav.close, #background-fade.hide {
@@ -191,7 +196,7 @@ nav.open, #background-fade.show {
 
 /* content */
 article {
-    margin: 60px 0;
+    margin-bottom: 60px;
 }
 
 .project-image {
@@ -248,6 +253,9 @@ footer p:nth-child(2) {
         display: none;
     }
 
+    nav {
+        width: auto;
+    }
     nav.close {
         display: block;
         background: none;
@@ -258,7 +266,7 @@ footer p:nth-child(2) {
     }
 
     #menu {
-        padding: 0 45px 0 0;
+        padding: 0 60px 0 0;
     }
 
     #menu li {
