@@ -120,9 +120,9 @@ header {
 }
 
 /* summary */
-#summary, footer {
-    padding-top: 10px;
-    padding-bottom: 20px;
+#summary {
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 #summary .content {
@@ -222,9 +222,8 @@ article {
 
 /* footer */
 footer {
+    padding: 20px;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 footer a, footer a:visited {
