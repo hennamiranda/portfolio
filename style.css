@@ -130,6 +130,7 @@ header {
     flex-direction: column;
     justify-content: center;
     height: 400px;
+    text-align: center;
 }
 
 /* nav bar */
