@@ -17,8 +17,9 @@ a:hover {
 }
 
 h1 {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 0;
 }
 
 h2 {
@@ -200,6 +201,10 @@ article {
     margin-bottom: 60px;
 }
 
+body > div:nth-child(4) > div > section:nth-child(3) > article {
+    margin-bottom: 0;
+}
+
 .project-image {
     text-align: center;
 }
@@ -237,15 +242,19 @@ footer p:nth-child(1) {
 
 footer p:nth-child(2) {
     font-weight: 400;
-    margin-top: 30px;
+    margin-top: 0;
+}
+
+#footer-connect p:nth-child(1) {
+    margin-bottom: 0;
 }
 
 @media only screen and (min-width: 760px) {
 
     /* general CSS */
     h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 48px;
+    line-height: 64px;
     }
 
     /* header */
@@ -335,7 +344,7 @@ footer p:nth-child(2) {
     .methods {
         display: grid;
         grid-template-columns: auto auto auto;
-        grid-gap: 2%;
+        grid-gap: 10%;
         margin: 40px 0 0;
         align-items: baseline;
     }
@@ -351,6 +360,6 @@ footer p:nth-child(2) {
     .about-me {
         display: grid;
         grid-template-columns: auto auto;
-        gap: 5%;
+        gap: 15%;
     }
 }
